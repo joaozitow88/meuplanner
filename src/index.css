@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 12 12 12;
+  --foreground: 229 229 229;
+}
+
+:root.light-mode {
+  --background: 249 250 251;
+  --foreground: 17 24 39;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+.light-mode .bg-gray-900 {
+  background-color: rgb(249 250 251);
+}
+
+.light-mode .bg-gray-800 {
+  background-color: rgb(255 255 255);
+}
+
+.light-mode .bg-gray-700 {
+  background-color: rgb(243 244 246);
+}
+
+.light-mode .text-gray-400 {
+  color: rgb(107 114 128);
+}
+
+.light-mode .text-gray-100 {
+  color: rgb(17 24 39);
+}
+
+.light-mode .border-gray-700 {
+  border-color: rgb(229 231 235);
+}
+
+.light-mode .hover\:bg-gray-700:hover {
+  background-color: rgb(243 244 246);
+}
+
+.light-mode .hover\:bg-gray-600:hover {
+  background-color: rgb(229 231 235);
+}
